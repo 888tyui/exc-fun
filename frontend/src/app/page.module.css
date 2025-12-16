@@ -1,0 +1,66 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 700;
+  letter-spacing: -2px;
+  background: linear-gradient(to right, #9945FF, #14F195);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.warriorText {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  color: #fff;
+  min-height: 2rem;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.actionBtn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.actionBtn:not(:disabled):hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #9945FF;
+  transform: translateY(-2px);
+}
+
+.actionBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  border-color: #222;
+}
+
+/* Wallet Button Override */
+.wallet-adapter-button {
+  font-family: 'Chakra Petch', sans-serif !important;
+  background-color: #9945FF !important;
+}
