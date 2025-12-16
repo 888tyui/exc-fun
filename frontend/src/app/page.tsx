@@ -13,7 +13,8 @@ export default function Home() {
   useEffect(() => {
     if (publicKey) {
       setLoading(true);
-      fetch('http://localhost:4000/warrior', {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000';
+      fetch(`${apiUrl}/warrior`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
